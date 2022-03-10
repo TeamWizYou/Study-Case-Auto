@@ -1,3 +1,27 @@
+import numpy as np
+import pandas as pd
+import math
+
+import matplotlib.pyplot as plt   
+
+## sklearn : https://scikit-learn.org/stable/index.html
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import roc_auc_score
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import f1_score
+
+## statsmodels : https://www.statsmodels.org/stable/index.html
+import statsmodels.formula.api as smf
+import statsmodels.api as sm
+
+## stop warings
+import warnings    
+warnings.filterwarnings("ignore")
+
+
+
 def  visualisation_coefficients_class(Base, Modele, Nom_variable) :  
     
     # table qui contien exp coeff et erreur
